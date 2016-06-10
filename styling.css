@@ -1,0 +1,80 @@
+body {
+    background-color: #252321;
+    font-family: Verdana, sans-serif;
+}
+ul {
+    max-width: 500px;
+    margin: auto;
+    padding: 0;
+}
+li {
+    list-style: none;
+    background-color: #3c3937;
+    color: #ddd;
+    border: 3px solid #423F3D;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+li.loading {
+    opacity: .3;
+}
+li .image {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #423F3D;
+    border-radius: 2px;
+    background-color: #33312E;
+}
+li .image canvas {
+    width: 100%;
+    height: 100%;
+}
+li h3 {
+    float: left;
+    margin: 0 10px;
+}
+li button.recalculate {
+    float: right;
+    color: #eee;
+    background-color: #3366bb;
+    background: -webkit-linear-gradient(top, rgb(51, 102, 187), rgb(40, 80, 147));
+    background: linear-gradient(to bottom, rgb(51, 102, 187), rgb(40, 80, 147));
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px #2a2a2a;
+    padding: 4px 8px;
+    margin: 0;
+    cursor: pointer;
+}
+li button.recalculate:active {
+    box-shadow: 0 0 1px #2a2a2a;
+    margin-top: 1px;
+}
+li button.recalculate:active, li button.recalculate:focus {
+    outline: none;
+}
+li.loading button.recalculate span {
+    animation: fa-spin 1s linear infinite;
+    -webkit-animation: fa-spin 1s linear infinite;
+}
+li .statistics {
+    float: right;
+    margin-right: 10px;
+    width: 225px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #bbb;
+}
+li .statistics tr > * {
+    text-align: left;
+    padding: 4px 0;
+}
+li .statistics th {
+    font-weight: normal;
+}
+li .statistics td {
+    font-weight: bold;
+}
